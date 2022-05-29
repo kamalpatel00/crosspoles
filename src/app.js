@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(static_path));
 
 app.use(cors())
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 app.set("view engin", "hbs");
 app.set("views", template_path);
 hbs.registerPartials(partials_path);
